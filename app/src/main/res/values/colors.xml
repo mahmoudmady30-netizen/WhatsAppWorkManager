@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Calm, professional palette: deep teal primary, warm neutral surfaces -->
+    <color name="md_primary">#0F6E5C</color>
+    <color name="md_on_primary">#FFFFFF</color>
+    <color name="md_primary_container">#B6F0DF</color>
+    <color name="md_secondary">#4A6358</color>
+    <color name="md_background_light">#F7FAF8</color>
+    <color name="md_surface_light">#FFFFFF</color>
+    <color name="md_background_dark">#101413</color>
+    <color name="md_surface_dark">#1A1F1D</color>
+    <color name="urgent_red">#D64545</color>
+    <color name="warn_amber">#E0A72E</color>
+    <color name="ok_green">#3E9C6D</color>
+</resources>

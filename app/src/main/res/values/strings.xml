@@ -1,0 +1,373 @@
+<resources>
+    <string name="app_name">WA premium</string>
+    <string name="notification_listener_label">WA premium Listener</string>
+
+    <!-- Dashboard -->
+        <string name="dashboard_delete_notification">Delete notification</string>
+<string name="dashboard_title">Work Dashboard</string>
+    <string name="stat_messages_today">Messages Today</string>
+    <string name="stat_work_groups">Work Groups</string>
+    <string name="stat_important">Important</string>
+    <string name="stat_need_reply">Need Reply</string>
+    <string name="last_summary">Last Summary</string>
+    <string name="no_summary_yet">No summary generated yet</string>
+    <string name="view_summary">View Summary</string>
+    <string name="generate_summary_now">Generate Now</string>
+
+    <!-- Work Groups -->
+    <string name="work_groups_title">Work Groups</string>
+    <string name="work_groups_empty">Received a message from a group first, and it will show up here.</string>
+    <string name="messages_count_fmt">%1$d Messages</string>
+    <string name="important_count_fmt">%1$d Important</string>
+    <string name="last_activity_fmt">Last activity: %1$s</string>
+
+    <!-- Summary -->
+    <string name="summary_title">AI Work Summary</string>
+    <string name="summary_important">IMPORTANT</string>
+    <string name="summary_follow_up">FOLLOW UP</string>
+    <string name="summary_general">GENERAL</string>
+    <string name="summary_total_fmt">Total: %1$d Messages</string>
+    <string name="summary_important_fmt">Important: %1$d</string>
+    <string name="summary_need_reply_fmt">Need Reply: %1$d</string>
+    <string name="summary_groups_fmt">Groups: %1$d</string>
+    <string name="summary_pinned_label">Pinned</string>
+    <string name="summary_pin">Pin this summary</string>
+    <string name="summary_unpin">Unpin this summary</string>
+    <string name="summary_show_more">Show more</string>
+    <string name="summary_show_less">Show less</string>
+    <string name="delete_summary_title">Delete this summary?</string>
+    <string name="delete_summary_body">This only removes this saved summary — it doesn\'t touch any of the messages it was generated from.</string>
+
+    <!-- Reply assistant -->
+    <string name="generate_reply">Generate Reply</string>
+    <string name="copy">Copy</string>
+    <string name="open_whatsapp">Open WhatsApp</string>
+    <string name="reply_copied">Reply copied to clipboard</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_notification_access">Notification Access</string>
+    <string name="settings_work_groups">Work Groups</string>
+    <string name="settings_keywords">Important Keywords</string>
+    <string name="settings_reply_detection">Reply Detection</string>
+    <string name="settings_ai_provider">AI Provider</string>
+    <string name="settings_summary_schedule">Summary Schedule</string>
+    <string name="settings_work_schedule">Work / Break / Quiet Schedule</string>
+    <string name="settings_language">Language</string>
+    <string name="settings_theme">Theme</string>
+    <string name="settings_data_storage">Data Storage</string>
+    <string name="settings_clear_data">Clear All Data</string>
+    <string name="settings_privacy">Privacy &amp; Data</string>
+    <string name="settings_about">About</string>
+    <string name="settings_retention">Message Retention</string>
+    <string name="settings_battery_optimization">Battery Optimization</string>
+    <string name="settings_battery_optimization_body">Exempt this app from battery optimization so scheduled summaries and reminders fire on time, even when the screen is off</string>
+
+    <!-- Privacy -->
+    <string name="privacy_title">Privacy &amp; Data</string>
+    <string name="privacy_body">
+        This app needs Notification Access to read the WhatsApp notifications that already
+        appear on your device. It does not read your chat database, does not use Accessibility
+        Services, does not use root, and does not attempt to modify WhatsApp\'s read-receipt or
+        online-status behavior in any way.\n\n
+        By default, all captured data stays on this device inside a local, private database.
+        Nothing is sent to any server.\n\n
+        If you enable an AI Cloud Summary provider, the text of your messages will be sent to
+        that provider to generate a summary. You will see a clear warning before this is enabled.
+        You can turn it off at any time and use the on-device rule-based summary instead.
+    </string>
+    <string name="privacy_clear_data_confirm">This will permanently delete all stored messages, groups, and summaries. This cannot be undone.</string>
+
+    <!-- Errors / Empty states -->
+    <string name="error_notification_access_disabled">Notification Access is disabled</string>
+    <string name="action_enable_access">Enable Access</string>
+
+    <!-- Generic actions, reused across dialogs -->
+    <string name="action_cancel">Cancel</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_add">Add</string>
+    <string name="action_close">Close</string>
+    <string name="action_save">Save</string>
+    <string name="action_update">Update</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_test">Test</string>
+    <string name="action_use">Use</string>
+    <string name="action_ok">OK</string>
+    <string name="empty_no_messages">No messages from WhatsApp yet.</string>
+    <string name="empty_no_groups">Receive a message from a group first.</string>
+    <string name="ai_failed_fallback">AI summary unavailable — showing local summary instead.</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_1_title">Manage WhatsApp. Stay focused.</string>
+    <string name="onboarding_1_body">Let WhatsApp run in the background — we\'ll summarize what matters.</string>
+    <string name="onboarding_2_title">Choose your work groups</string>
+    <string name="onboarding_3_title">Get smart summaries</string>
+    <string name="onboarding_4_title">Privacy first</string>
+    <string name="onboarding_next">Next</string>
+    <string name="onboarding_enable_notifications">Enable Notification Access</string>
+    <string name="onboarding_continue_to_app">Continue to app</string>
+    <string name="onboarding_grant_both_hint">Grant both above to continue.</string>
+
+    <!-- Notification channels -->
+    <string name="channel_work_summary">Work Summary</string>
+    <string name="channel_important_messages">Important Messages</string>
+    <string name="channel_system">System</string>
+    <string name="channel_scheduled_reminders">Scheduled Reminders</string>
+
+    <!-- Search / Filters -->
+    <string name="search_hint">Search group, sender, message…</string>
+    <string name="filter_all">All</string>
+    <string name="filter_important">Important</string>
+    <string name="filter_need_reply">Need Reply</string>
+    <string name="filter_unread">Unread</string>
+    <string name="filter_read">Read</string>
+    <string name="filter_today">Today</string>
+    <string name="filter_yesterday">Yesterday</string>
+    <string name="filter_this_week">This Week</string>
+
+    <!-- Scheduled messages -->
+    <string name="scheduled_messages_title">Scheduled Messages</string>
+    <string name="schedule_nav_label">Schedule</string>
+    <string name="ai_reply_nav_label">AI Reply</string>
+    <string name="scheduled_messages_empty">No scheduled messages yet.</string>
+    <string name="scheduled_reminder_title">You have a scheduled message</string>
+    <string name="scheduled_reminder_copied_body_fmt">Copied — paste it into the chat: %1$s</string>
+
+    <!-- Onboarding: language + WhatsApp app choice -->
+    <string name="onboarding_language_title">Choose your language</string>
+    <string name="onboarding_language_subtitle">You can change this anytime in Settings.</string>
+    <string name="onboarding_language_english">English</string>
+    <string name="onboarding_language_arabic">العربية</string>
+    <string name="onboarding_whatsapp_variant_title">Which WhatsApp do you use?</string>
+    <string name="onboarding_whatsapp_variant_subtitle">This decides which app opens for chats and reminders. You can change this anytime in Settings.</string>
+    <string name="onboarding_whatsapp_variant_auto">Automatic (prefer WhatsApp)</string>
+    <string name="onboarding_whatsapp_variant_regular">WhatsApp</string>
+    <string name="onboarding_whatsapp_variant_business">WhatsApp Business</string>
+
+    <!-- Dashboard extras -->
+    <string name="dashboard_search_short">Search</string>
+    <string name="dashboard_add_important_keyword">Add Important Keyword</string>
+    <string name="dashboard_add_important_person">Add Important Person</string>
+
+    <!-- Work Groups & Clients -->
+    <string name="add_group_or_client_title">Add Group or Client</string>
+    <string name="add_group_or_client_name_label">Exact name as it appears in WhatsApp</string>
+    <string name="add_group_or_client_name_placeholder">e.g. Sales Team, or Ahmed Hassan</string>
+    <string name="pick_client_from_contacts">Pick a client from Contacts</string>
+    <string name="pick_from_contacts_default_label">Pick from Contacts</string>
+
+    <!-- Time picker -->
+    <string name="time_picker_title">Select Time</string>
+
+    <!-- Country code / phone field -->
+    <string name="country_code_label">Code</string>
+    <string name="phone_number_label">Phone number</string>
+    <string name="country_code_phone_field_hint">Pick your country from the list (or just type its code if you know it), then enter the number without the leading 0. Leave both blank for a group message.</string>
+
+    <!-- Work Schedules -->
+    <string name="tab_summary_times">Summary Times</string>
+    <string name="tab_work_break_quiet">Work / Break / Quiet</string>
+    <string name="add_summary_time_title">Add Summary Time</string>
+    <string name="schedule_name_label">Name</string>
+    <string name="add_window_title">Add Work/Break/Quiet Window</string>
+    <string name="window_name_placeholder">Name (e.g. Lunch Break)</string>
+    <string name="mode_work">Work</string>
+    <string name="mode_break">Break</string>
+    <string name="mode_quiet">Quiet</string>
+    <string name="schedule_every_day_fmt">%1$s · Every day</string>
+
+    <!-- Scheduled Messages dialog -->
+    <string name="message_text_label">Message text</string>
+    <string name="time_label_fmt">Time: %1$s</string>
+    <string name="repeat_every_day">Repeat every day</string>
+    <string name="pick_from_important_people">Pick from Important People</string>
+    <string name="pick_contact_instead">Pick number</string>
+
+    <!-- Keyword Rules -->
+    <string name="important_keywords_title">Important Keywords</string>
+    <string name="add_keyword_title">Add Keyword</string>
+    <string name="edit_keyword_title">Edit Keyword</string>
+    <string name="keyword_or_phrase_label">Keyword or phrase</string>
+    <string name="keyword_weight_label">Weight (1-10, higher = more important)</string>
+    <string name="keyword_weight_fmt">Weight: %1$d</string>
+
+    <!-- Reply Detection -->
+    <string name="reply_detection_title">Reply Detection</string>
+    <string name="add_phrase_title">Add Phrase</string>
+    <string name="phrase_label">Phrase (e.g. \"ping me\", \"لو سمحت رد\")</string>
+
+    <!-- Search / message list -->
+    <string name="delete_message_title">Delete message?</string>
+    <string name="delete_message_body">This removes it from this app only — it doesn\'t touch anything in WhatsApp itself.</string>
+    <string name="read_label">Read</string>
+    <string name="unread_label">Unread</string>
+
+    <!-- Settings extras -->
+    <string name="ai_connection_title">AI Connection</string>
+    <string name="api_key_title_fmt">API Key for %1$s</string>
+    <string name="clear_data_title">Clear all data?</string>
+
+    <!-- Important People -->
+    <string name="important_people_title">Important People</string>
+    <string name="add_important_person_title">Add Important Person</string>
+    <string name="important_person_name_label">Name (as it appears in WhatsApp)</string>
+    <string name="important_person_phone_optional_hint">Optional — but adding it lets you pick this person directly when scheduling a message, instead of typing their number again.</string>
+    <string name="find_number_in_contacts">Find their number in Contacts</string>
+    <string name="label_time">Time</string>
+    <string name="label_start">Start</string>
+    <string name="label_end">End</string>
+
+    <!-- Settings: WhatsApp app + auto-enable -->
+    <string name="settings_whatsapp_app_title">WhatsApp App</string>
+    <string name="settings_whatsapp_app_subtitle_fmt">%1$s — which app to open for chats and reminders</string>
+    <string name="settings_auto_enable_title">Automatically include new groups/clients in summaries</string>
+    <string name="settings_auto_enable_desc">Useful if you have a lot of muted WhatsApp chats — muted still works (WhatsApp still delivers those notifications silently), this just skips having to switch each one on yourself in Work Groups &amp; Clients. Off by default so a brand-new group doesn\'t show up in a summary before you\'ve decided it\'s relevant.</string>
+    <string name="retention_days_fmt">%1$d days</string>
+    <string name="settings_system_default">System default</string>
+    <string name="settings_summary_schedule_subtitle">Manage automatic summary times, and Work/Break/Quiet windows</string>
+    <string name="settings_scheduled_messages_subtitle">Draft messages to send manually at a set time</string>
+    <string name="settings_important_people_subtitle">Messages from these people are always marked Important</string>
+    <string name="settings_keywords_subtitle">Add your own importance keywords, on top of the built-in list</string>
+    <string name="settings_reply_detection_subtitle">Add your own \"needs a reply\" phrases</string>
+    <string name="settings_allow_sending_fmt">Allow sending message text to %1$s for summaries</string>
+    <string name="settings_api_key_stored_locally">Stored encrypted on-device only</string>
+    <string name="settings_groq_secure_proxy">Groq AI</string>
+    <string name="settings_groq_secure_proxy_desc">Protected locally with Android Keystore encryption. No server setup needed.</string>
+    <string name="settings_version_fmt">WA premium · v%1$s</string>
+    <string name="no_phone_number_saved">No phone number saved</string>
+    <string name="dashboard_refreshed">Refreshed</string>
+    <string name="summary_ready_fmt">Summary ready: %1$d messages, %2$d important</string>
+    <string name="summary_generation_failed">Couldn\'t generate a summary right now — try again in a moment.</string>
+    <string name="edit_scheduled_message_title">Edit Scheduled Message</string>
+    <string name="regenerate_replies">Regenerate</string>
+    <string name="write_your_own_reply">Or write your own</string>
+    <string name="write_your_own_reply_hint">Type your reply here…</string>
+    <string name="toggle_important">Mark as Important</string>
+    <string name="save_as_important_person">Save as Important</string>
+    <string name="update_important_person_title">Update Important Person</string>
+    <string name="already_saved_as_important">Already saved as an Important Person — this updates it.</string>
+    <string name="no_enabled_groups_banner_title">Messages are arriving, but nothing is enabled yet</string>
+    <string name="no_enabled_groups_banner_body">Your summary stays empty until you turn on at least one group or client.</string>
+    <string name="add_to_phone_contacts">Add to Phone Contacts</string>
+    <string name="refine_with_ai">Refine with AI</string>
+    <string name="badge_notification_title_fmt">%1$d need your attention</string>
+    <string name="badge_notification_body">Important or need-a-reply messages are waiting</string>
+    <string name="quick_chat_title">Quick Chat</string>
+    <string name="quick_chat_subtitle">Open a WhatsApp chat directly by number — no need to save them as a contact first.</string>
+    <string name="quick_chat_number_label">Client\'s number</string>
+        <string name="quick_chat_business_label">Business</string>
+<string name="quick_chat_which_whatsapp">Which WhatsApp?</string>
+    <string name="quick_chat_open_button">Open Chat</string>
+    <string name="battery_banner_title">Battery optimization is limiting background reliability</string>
+    <string name="battery_banner_body">Muted WhatsApp chats deliver their notifications silently — Android is more likely to delay processing silent notifications specifically when this app isn\'t exempted from battery optimization. A delayed capture can look identical to one that never happened.</string>
+    <string name="greeting_morning">Good morning</string>
+    <string name="greeting_afternoon">Good afternoon</string>
+    <string name="greeting_evening">Good evening</string>
+    <string name="accessibility_service_label">WA premium Auto Reply</string>
+    <string name="accessibility_service_description">Allows WA premium to open the selected WhatsApp chat, enter an approved AI reply, and press Send when Auto Send is enabled. Only configured rules are eligible.</string>
+    <string name="auto_reply_title">Auto Reply</string>
+    <string name="auto_reply_premium_subtitle">Tell the AI exactly how to handle each person. Choose the contact, describe the behavior you want, and WA premium can generate and send the reply automatically when the rule matches.</string>
+    <string name="auto_reply_premium_rule_hint">Add specific names if needed, or leave this blank so AI can handle anyone using your instructions.</string>
+    <string name="auto_reply_ai_instruction_label">How should AI handle messages?</string>
+    <string name="auto_reply_ai_instruction_hint">Example: Be professional, answer briefly, never promise a time, and ask for the order number if needed.</string>
+    <string name="auto_reply_ai_instruction_explanation">This instruction is applied to every matched incoming message, together with conversation context and tone.</string>
+    <string name="auto_reply_auto_send_title">Auto Send</string>
+    <string name="auto_reply_auto_send_desc">After AI generates the reply, open this chat and send it automatically. Requires the WA premium Accessibility Service.</string>
+    <string name="auto_reply_auto_send_badge">Auto Send</string>
+    <string name="auto_reply_enable_accessibility">Enable Auto Send access</string>
+    <string name="auto_reply_ready_title_fmt">Ready reply for %1$s</string>
+    <string name="auto_reply_subtitle">Premium AI rules can generate replies from each message, follow your custom instructions, and send automatically when Auto Send is enabled.</string>
+    <string name="auto_reply_person_label">People (optional)</string>
+    <string name="auto_reply_person_hint">Leave blank for everyone, or enter multiple names separated by commas</string>
+    <string name="auto_reply_person_support">Example: Alex, John, Company Client — blank = all incoming messages</string>
+    <string name="auto_reply_all_contacts">All people</string>
+    <string name="auto_reply_tone_label">Reply tone for this person</string>
+    <string name="auto_reply_tone_work">Work</string>
+    <string name="auto_reply_tone_friend">Friend</string>
+    <string name="auto_reply_tone_family">Family</string>
+    <string name="auto_reply_keyword_label">Specific word (optional — leave blank to match any message)</string>
+    <string name="auto_reply_text_label">Reply to prepare (optional)</string>
+    <string name="auto_reply_text_ai_hint">Leave blank to let AI write it automatically</string>
+    <string name="auto_reply_text_ai_explanation">Blank = the AI generates a fresh reply from each actual incoming message. Filled in = that exact text is used every time this rule matches.</string>
+    <string name="auto_reply_ai_generated_badge">✨ AI writes this automatically</string>
+    <string name="auto_reply_add_title">Add Auto Reply Rule</string>
+    <string name="auto_reply_edit_title">Edit Auto Reply Rule</string>
+    <string name="auto_reply_empty">No Auto Reply rules yet. Add a rule and describe how AI should respond; leave People blank to handle anyone.</string>
+    <string name="auto_reply_any_message">Any message</string>
+    <string name="auto_reply_use_queued">Reply queued — WA premium will send it when the selected WhatsApp chat is ready.</string>
+    <string name="no_saved_number_fallback_fmt">No saved number for %1$s — copied the text and opened WhatsApp. Save their number under Important People for one-tap chats next time.</string>
+    <string name="read_all">Read All</string>
+    <string name="delete_all">Delete All</string>
+    <string name="delete_all_title">Delete all these messages?</string>
+    <string name="delete_all_body_fmt">This deletes all %1$d messages currently shown under this filter. This can\'t be undone.</string>
+    <string name="delete_work_group_title">Remove this group/client?</string>
+    <string name="delete_work_group_body_fmt">This removes \"%1$s\" from this list. Messages already captured from them stay in Search/history — only this tracking entry goes away. If a new message arrives from them later, it\'ll be re-added fresh (off by default).</string>
+    <string name="country_picker_title">Choose your country</string>
+    <string name="country_picker_search_hint">Search by name or code</string>
+    <string name="country_picker_no_results">No countries match your search</string>
+    <string name="onboarding_country_title">What\'s your country?</string>
+    <string name="onboarding_country_subtitle">This becomes the default country code everywhere you enter a phone number in this app — Quick Chat, Important People, Scheduled Messages. You can always change it later in Settings, or override it for a single number when you need to.</string>
+    <string name="onboarding_country_selected_fmt">Selected: %1$s %2$s (+%3$s)</string>
+    <string name="settings_default_country">Default Country</string>
+    <string name="settings_default_country_body_fmt">%1$s %2$s (+%3$s) — used to pre-fill the country code everywhere you enter a phone number</string>
+    <string name="about_app_initials">WM</string>
+    <string name="app_name_full">WA premium</string>
+    <string name="about_developed_by">Developed by</string>
+    <string name="about_developer_name">Mahmoud Mady</string>
+    <string name="about_developer_title">Developer</string>
+    <string name="about_copyright_fmt">© %1$s Mahmoud Mady. All rights reserved.</string>
+    <string name="muted_chats_help_title">Silent chats</string>
+    <string name="muted_chats_help_body">Keep chats silent without losing tracking. Use Android notification settings.</string>
+    <string name="open_whatsapp_notification_settings">Open WhatsApp notification settings</string>
+    <string name="scheduled_messages_explainer">At the scheduled time, tapping the reminder opens WhatsApp with your message ready — you still tap Send yourself. WhatsApp gives no third-party app a way to send automatically without that tap. Tap a message below to edit it.</string>
+    <string name="important_people_matching_hint">Matches the sender name WhatsApp shows in its notification — a partial, case-insensitive match is enough (e.g. \"Ahmed\" matches \"Ahmed Hassan\").</string>
+    <string name="important_people_empty">No important people added yet. Messages from anyone you add here are always marked Important — regardless of keywords. Add their phone number too and you can pick them directly when scheduling a message.</string>
+    <string name="keyword_rules_empty">No custom keywords yet. The built-in list (urgent/عاجل, complaint/شكوى, manager/مدير...) always applies — add your own on top, with a weight from 1-10.</string>
+    <string name="toast_could_not_open_whatsapp">Could not open WhatsApp</string>
+    <string name="toast_could_not_open_contacts">Could not open Contacts</string>
+    <string name="ai_test_error_consent_needed">Turn on \"Allow sending message text\" above first</string>
+    <string name="ai_test_error_no_api_key_fmt">No API key saved for %1$s yet</string>
+    <string name="ai_test_error_empty_response">Provider responded but returned no content</string>
+    <string name="work_group_waiting_first_message">Added manually — waiting for the first message</string>
+    <string name="add_group_or_client_contacts_hint">For a client picked from Contacts, double check the name matches exactly what WhatsApp shows for them — phone contact names and WhatsApp display names aren\'t always the same.</string>
+    <string name="reply_phrases_empty">No custom phrases yet. Built-in phrases (\"any update?\", \"محتاج رد\", questions ending in ? or ؟...) always apply — add your own on top.</string>
+    <string name="time_picker_switch_to_clock">Switch to clock</string>
+    <string name="time_picker_switch_to_manual">Switch to manual entry</string>
+    <string name="scheduled_message_to_fmt">To: %1$s</string>
+    <string name="scheduled_message_every_day">Every day</string>
+    <string name="scheduled_message_opens_chat_directly">Opens chat directly</string>
+    <string name="scheduled_message_opens_whatsapp_generic">Background send attempt · fallback if WhatsApp reply action is unavailable</string>
+    <string name="scheduled_message_background">Premium background auto-send</string>
+    <string name="settings_section_permissions">PERMISSIONS</string>
+    <string name="settings_section_automation">AUTOMATION</string>
+    <string name="settings_section_ai">AI &amp; SUMMARIES</string>
+    <string name="settings_section_appearance">APPEARANCE &amp; REGION</string>
+    <string name="settings_section_data">DATA &amp; PRIVACY</string>
+    <string name="settings_section_about">ABOUT</string>
+    <string name="settings_status_enabled">Enabled</string>
+    <string name="settings_status_disabled">Disabled</string>
+    <string name="ai_status_not_tested">Not tested yet</string>
+    <string name="ai_status_testing">Testing…</string>
+    <string name="ai_status_connected">Connected — replies will use this provider</string>
+    <string name="ai_status_failed">Connection failed</string>
+    <string name="auto_reply_no_rules_for_filter">No rules with this tone yet.</string>
+    <string name="need_reply_names_preview_more_fmt">%1$s +%2$d more</string>
+    <string name="need_reply_names_menu_title">Waiting on a reply</string>
+    <string name="action_send">Send</string>
+    <string name="dashboard_next_scheduled_fmt">Next scheduled · %1$s</string>
+    <string name="dashboard_send_now">Send Now</string>
+    <string name="dashboard_ready_reply_for_fmt">Ready reply for %1$s</string>
+    <string name="dashboard_ticker_important_fmt">Important — %1$s</string>
+    <string name="dashboard_ticker_need_reply_fmt">Needs a reply — %1$s</string>
+    <string name="dashboard_ticker_normal_fmt">New message — %1$s</string>
+    <string name="dashboard_next_scheduled_compact_fmt">%1$s · %2$s</string>
+    <string name="dashboard_ticker_count_suffix_fmt">(%1$d)</string>
+    <string name="auto_reply_show_replies">Show replies (%1$d)</string>
+    <string name="auto_reply_notification_delete">Delete reply</string>
+    <string name="auto_reply_notification_deleted">AI reply notification deleted</string>
+    <string name="notification_delete">Delete</string>
+    <string name="messaging_platform_label">Messaging app</string>
+    <string name="messaging_platform_whatsapp">WhatsApp</string>
+    <string name="messaging_platform_business">WhatsApp Business</string>
+    <string name="messaging_platform_messenger">Messenger</string>
+</resources>

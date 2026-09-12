@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--
+        Package Visibility (Android 11 / API 30+): apps can no longer see whether another app
+        is installed by default — PackageManager.getPackageInfo()/getLaunchIntentForPackage()
+        for a package not declared here silently fails (throws NameNotFoundException / returns
+        null) EVEN IF that app is actually installed. Without this block, every WhatsApp-detection
+        check in IntentHelper (used for opening WhatsApp generally, the click-to-chat deep link,
+        and the tap action on Scheduled Message reminders) would always report "not installed",
+        regardless of reality — this was a real bug, not a false permission prompt.
+    -->
+    <queries>
+        <package android:name="com.whatsapp" />
+        <package android:name="com.whatsapp.w4b" />
+        <package android:name="com.facebook.orca" />
+    </queries>
+
+    <!-- Only permission genuinely required: posting our own notifications (Android 13+) -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <!-- Lets Battery Optimization be requested with a direct system dialog for this app
+         specifically (ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS) rather than sending the
+         user to the generic all-apps list to find and select it themselves. -->
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <!-- Needed only if a cloud AI provider is enabled by the user -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Allows WorkManager to schedule exact-ish periodic summary jobs reliably -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+    <!-- Requested at runtime, only when the user opts in, to auto-fill a phone number when
+         adding an Important Person by name — see ContactsLookup.kt. Read-only; never written. -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <!--
+        Deliberately NOT requested: LOCATION, CAMERA, MICROPHONE, SMS, PHONE.
+        Notification access (BIND_NOTIFICATION_LISTENER_SERVICE) is granted by the user
+        from system Settings, not via a runtime permission dialog. READ_CONTACTS (above) is
+        the one exception to an otherwise contacts-free design — requested lazily, only at the
+        moment the user tries to use the one feature that needs it, never upfront.
+    -->
+
+    <application
+        android:name=".WwmApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.WhatsAppWorkManager"
+        tools:targetApi="34">
+
+        <activity
+            android:name=".presentation.MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.WhatsAppWorkManager"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Premium auto-send fallback bridge. The user must explicitly enable this Accessibility
+             Service in Android Settings. It operates only when WhatsApp exposes a visible UI.
+             Screen-off/locked background sending is handled first through WhatsApp's notification
+             Direct Reply RemoteInput when that action is available. -->
+        <service
+            android:name=".service.WhatsAppAccessibilityService"
+            android:exported="true"
+            android:label="@string/accessibility_service_label"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/whatsapp_accessibility_service" />
+        </service>
+
+        <!-- Core capture mechanism: reads notifications the user has permitted. -->
+
+        <service
+            android:name=".service.WhatsAppNotificationListenerService"
+            android:exported="true"
+            android:label="@string/notification_listener_label"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name=".receiver.ScheduledMessageTapReceiver"
+            android:exported="false" />
+
+        <receiver
+            android:name=".receiver.ScheduledMessageAlarmReceiver"
+            android:exported="false" />
+        <receiver
+            android:name=".receiver.AutoReplyNotificationDismissReceiver"
+            android:exported="false" />
+        <receiver
+            android:name=".receiver.ScheduledMessageNotificationDismissReceiver"
+            android:exported="false" />
+        <receiver
+            android:name=".receiver.NotificationDismissReceiver"
+            android:exported="false" />
+        <receiver
+            android:name=".receiver.ScheduledMessageBootReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="${applicationId}.androidx-startup"
+            android:exported="false"
+            tools:node="merge" />
+
+    </application>
+
+</manifest>

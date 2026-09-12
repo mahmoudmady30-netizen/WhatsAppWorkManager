@@ -1,0 +1,350 @@
+<resources>
+    <string name="app_name">WA premium</string>
+    <string name="notification_listener_label">مستمع WhatsApp Work Manager</string>
+
+        <string name="dashboard_delete_notification">مسح الإشعار</string>
+<string name="dashboard_title">لوحة العمل</string>
+    <string name="stat_messages_today">رسائل اليوم</string>
+    <string name="stat_work_groups">جروبات العمل</string>
+    <string name="stat_important">مهمة</string>
+    <string name="stat_need_reply">تحتاج رد</string>
+    <string name="last_summary">آخر ملخص</string>
+    <string name="no_summary_yet">لا يوجد ملخص بعد</string>
+    <string name="view_summary">عرض الملخص</string>
+    <string name="generate_summary_now">توليد الآن</string>
+
+    <string name="work_groups_title">جروبات العمل</string>
+    <string name="work_groups_empty">استقبل رسالة من جروب أولًا وستظهر هنا.</string>
+    <string name="messages_count_fmt">%1$d رسالة</string>
+    <string name="important_count_fmt">%1$d مهمة</string>
+    <string name="last_activity_fmt">آخر نشاط: %1$s</string>
+
+    <string name="summary_title">ملخص العمل الذكي</string>
+    <string name="summary_important">مهم</string>
+    <string name="summary_follow_up">متابعة</string>
+    <string name="summary_general">عام</string>
+    <string name="summary_total_fmt">الإجمالي: %1$d رسالة</string>
+    <string name="summary_important_fmt">مهمة: %1$d</string>
+    <string name="summary_need_reply_fmt">تحتاج رد: %1$d</string>
+    <string name="summary_groups_fmt">الجروبات: %1$d</string>
+    <string name="summary_pinned_label">مثبّت</string>
+    <string name="summary_pin">تثبيت الملخص ده</string>
+    <string name="summary_unpin">إلغاء التثبيت</string>
+    <string name="summary_show_more">عرض المزيد</string>
+    <string name="summary_show_less">عرض أقل</string>
+    <string name="delete_summary_title">مسح الملخص ده؟</string>
+    <string name="delete_summary_body">ده بس هيمسح الملخص المحفوظ ده — مش هيأثر على أي رسايل اتولّد منها.</string>
+
+    <string name="generate_reply">اقتراح رد</string>
+    <string name="copy">نسخ</string>
+    <string name="open_whatsapp">فتح واتساب</string>
+    <string name="reply_copied">تم نسخ الرد</string>
+
+    <string name="settings_title">الإعدادات</string>
+    <string name="settings_notification_access">صلاحية الإشعارات</string>
+    <string name="settings_work_groups">جروبات العمل</string>
+    <string name="settings_keywords">الكلمات المهمة</string>
+    <string name="settings_reply_detection">كشف الرسائل التي تحتاج رد</string>
+    <string name="settings_ai_provider">مزوّد الذكاء الاصطناعي</string>
+    <string name="settings_summary_schedule">جدول الملخصات</string>
+    <string name="settings_work_schedule">جدول العمل / الاستراحة / الهدوء</string>
+    <string name="settings_language">اللغة</string>
+    <string name="settings_theme">المظهر</string>
+    <string name="settings_data_storage">تخزين البيانات</string>
+    <string name="settings_clear_data">حذف كل البيانات</string>
+    <string name="settings_privacy">الخصوصية والبيانات</string>
+    <string name="settings_about">عن التطبيق</string>
+    <string name="settings_retention">مدة الاحتفاظ بالرسائل</string>
+    <string name="settings_battery_optimization">استثناء من توفير البطارية</string>
+    <string name="settings_battery_optimization_body">استثنِ التطبيق من توفير البطارية عشان الملخصات والتذكيرات المجدولة تشتغل في وقتها حتى لو الشاشة مقفولة</string>
+
+    <string name="privacy_title">الخصوصية والبيانات</string>
+    <string name="privacy_body">
+        يحتاج التطبيق صلاحية الوصول إلى الإشعارات لقراءة إشعارات WhatsApp التي تظهر بالفعل على
+        جهازك. التطبيق لا يقرأ قاعدة بيانات المحادثات، ولا يستخدم خدمة Accessibility، ولا يستخدم
+        صلاحيات الروت، ولا يحاول التأثير على حالة آخر ظهور أو علامات القراءة بأي شكل.\n\n
+        افتراضيًا، تبقى كل البيانات على جهازك داخل قاعدة بيانات محلية خاصة. لا يتم إرسال أي شيء
+        إلى أي خادم.\n\n
+        إذا فعّلت خدمة ملخص سحابي بالذكاء الاصطناعي، سيتم إرسال نص رسائلك إلى مزوّد الخدمة لإنشاء
+        الملخص، وستظهر لك رسالة تحذير واضحة قبل التفعيل. يمكنك إيقاف ذلك في أي وقت واستخدام
+        الملخص المحلي المبني على القواعد بدلًا منه.
+    </string>
+    <string name="privacy_clear_data_confirm">سيتم حذف كل الرسائل والجروبات والملخصات المخزنة نهائيًا، ولا يمكن التراجع عن ذلك.</string>
+
+    <string name="error_notification_access_disabled">صلاحية الإشعارات غير مفعّلة</string>
+    <string name="action_enable_access">تفعيل الصلاحية</string>
+
+    <!-- Generic actions, reused across dialogs -->
+    <string name="action_cancel">إلغاء</string>
+    <string name="action_refresh">تحديث</string>
+    <string name="action_add">إضافة</string>
+    <string name="action_close">إغلاق</string>
+    <string name="action_save">حفظ</string>
+    <string name="action_update">تحديث</string>
+    <string name="action_delete">حذف</string>
+    <string name="action_test">اختبار</string>
+    <string name="action_use">استخدام</string>
+    <string name="action_ok">تم</string>
+    <string name="empty_no_messages">لسه مفيش رسائل من WhatsApp.</string>
+    <string name="empty_no_groups">استقبل رسالة من جروب أولًا.</string>
+    <string name="ai_failed_fallback">تعذّر إنشاء ملخص AI — يتم عرض الملخص المحلي بدلًا منه.</string>
+
+    <string name="onboarding_1_title">خلي WhatsApp شغال في الخلفية</string>
+    <string name="onboarding_1_body">وإحنا نلخص لك المهم، من غير ما تفتح واتساب كل شوية.</string>
+    <string name="onboarding_2_title">اختر جروبات الشغل</string>
+    <string name="onboarding_3_title">احصل على ملخصات ذكية</string>
+    <string name="onboarding_4_title">الخصوصية أولًا</string>
+    <string name="onboarding_next">التالي</string>
+    <string name="onboarding_enable_notifications">تفعيل صلاحية الإشعارات</string>
+    <string name="onboarding_continue_to_app">الدخول للتطبيق</string>
+    <string name="onboarding_grant_both_hint">فعّل الاتنين فوق عشان تقدر تكمل.</string>
+
+    <string name="channel_work_summary">ملخص العمل</string>
+    <string name="channel_important_messages">رسائل مهمة</string>
+    <string name="channel_system">النظام</string>
+    <string name="channel_scheduled_reminders">تذكيرات مجدولة</string>
+
+    <string name="search_hint">ابحث في الجروب أو المرسل أو الرسالة…</string>
+    <string name="filter_all">الكل</string>
+    <string name="filter_important">مهم</string>
+    <string name="filter_need_reply">يحتاج رد</string>
+    <string name="filter_unread">غير مقروء</string>
+    <string name="filter_read">مقروء</string>
+    <string name="filter_today">اليوم</string>
+    <string name="filter_yesterday">أمس</string>
+    <string name="filter_this_week">هذا الأسبوع</string>
+
+    <string name="scheduled_messages_title">رسائل مجدولة</string>
+    <string name="schedule_nav_label">جدولة</string>
+    <string name="ai_reply_nav_label">رد تلقائي</string>
+    <string name="scheduled_messages_empty">لا توجد رسائل مجدولة بعد.</string>
+    <string name="scheduled_reminder_title">لديك رسالة مجدولة</string>
+    <string name="scheduled_reminder_copied_body_fmt">تم النسخ — الصقها في الشات: %1$s</string>
+
+    <!-- Onboarding: language + WhatsApp app choice -->
+    <string name="onboarding_language_title">اختر لغتك</string>
+    <string name="onboarding_language_subtitle">تقدر تغيّرها في أي وقت من الإعدادات.</string>
+    <string name="onboarding_language_english">English</string>
+    <string name="onboarding_language_arabic">العربية</string>
+    <string name="onboarding_whatsapp_variant_title">بتستخدم واتساب إيه؟</string>
+    <string name="onboarding_whatsapp_variant_subtitle">ده اللي هيحدد أي تطبيق يفتح للشات والتذكيرات. تقدر تغيّره في أي وقت من الإعدادات.</string>
+    <string name="onboarding_whatsapp_variant_auto">تلقائي (يفضّل واتساب العادي)</string>
+    <string name="onboarding_whatsapp_variant_regular">واتساب</string>
+    <string name="onboarding_whatsapp_variant_business">واتساب بيزنس</string>
+
+    <!-- Dashboard extras -->
+    <string name="dashboard_search_short">بحث</string>
+    <string name="dashboard_add_important_keyword">إضافة كلمة مهمة</string>
+    <string name="dashboard_add_important_person">إضافة شخص مهم</string>
+
+    <!-- Work Groups & Clients -->
+    <string name="add_group_or_client_title">إضافة جروب أو عميل</string>
+    <string name="add_group_or_client_name_label">الاسم بالظبط زي ما ظاهر في واتساب</string>
+    <string name="add_group_or_client_name_placeholder">مثال: فريق المبيعات، أو أحمد حسن</string>
+    <string name="pick_client_from_contacts">اختر عميل من جهات الاتصال</string>
+    <string name="pick_from_contacts_default_label">اختيار من جهات الاتصال</string>
+
+    <!-- Time picker -->
+    <string name="time_picker_title">اختر الوقت</string>
+
+    <!-- Country code / phone field -->
+    <string name="country_code_label">الكود</string>
+    <string name="phone_number_label">رقم التليفون</string>
+    <string name="country_code_phone_field_hint">اختار بلدك من القايمة (أو اكتب الكود لو تعرفه)، وبعدين اكتب الرقم من غير الصفر في الأول. سيب الاتنين فاضيين لو الرسالة لجروب.</string>
+
+    <!-- Work Schedules -->
+    <string name="tab_summary_times">أوقات الملخص</string>
+    <string name="tab_work_break_quiet">شغل / استراحة / هدوء</string>
+    <string name="add_summary_time_title">إضافة وقت ملخص</string>
+    <string name="schedule_name_label">الاسم</string>
+    <string name="add_window_title">إضافة فترة شغل/استراحة/هدوء</string>
+    <string name="window_name_placeholder">الاسم (مثال: استراحة الغدا)</string>
+    <string name="mode_work">شغل</string>
+    <string name="mode_break">استراحة</string>
+    <string name="mode_quiet">هدوء</string>
+    <string name="schedule_every_day_fmt">%1$s · كل يوم</string>
+
+    <!-- Scheduled Messages dialog -->
+    <string name="message_text_label">نص الرسالة</string>
+    <string name="time_label_fmt">الوقت: %1$s</string>
+    <string name="repeat_every_day">تكرار كل يوم</string>
+    <string name="pick_from_important_people">اختر من الأشخاص المهمين</string>
+    <string name="pick_contact_instead">اختار رقم</string>
+
+    <!-- Keyword Rules -->
+    <string name="important_keywords_title">كلمات مهمة</string>
+    <string name="add_keyword_title">إضافة كلمة</string>
+    <string name="edit_keyword_title">تعديل كلمة</string>
+    <string name="keyword_or_phrase_label">كلمة أو عبارة</string>
+    <string name="keyword_weight_label">الوزن (1-10، الأعلى أهم)</string>
+    <string name="keyword_weight_fmt">الوزن: %1$d</string>
+
+    <!-- Reply Detection -->
+    <string name="reply_detection_title">اكتشاف الرد</string>
+    <string name="add_phrase_title">إضافة عبارة</string>
+    <string name="phrase_label">عبارة (مثال: \"لو سمحت رد\"، \"ping me\")</string>
+
+    <!-- Search / message list -->
+    <string name="delete_message_title">حذف الرسالة؟</string>
+    <string name="delete_message_body">هيتشال من التطبيق ده بس — مش هيأثر على واتساب خالص.</string>
+    <string name="read_label">مقروء</string>
+    <string name="unread_label">غير مقروء</string>
+
+    <!-- Settings extras -->
+    <string name="ai_connection_title">اتصال الذكاء الاصطناعي</string>
+    <string name="api_key_title_fmt">مفتاح API لـ %1$s</string>
+    <string name="clear_data_title">مسح كل البيانات؟</string>
+
+    <!-- Important People -->
+    <string name="important_people_title">أشخاص مهمين</string>
+    <string name="add_important_person_title">إضافة شخص مهم</string>
+    <string name="important_person_name_label">الاسم (زي ما ظاهر في واتساب)</string>
+    <string name="important_person_phone_optional_hint">اختياري — بس لو حطيته هتقدر تختار الشخص ده مباشرة لما تعمل رسالة مجدولة، بدل ما تكتب رقمه تاني.</string>
+    <string name="find_number_in_contacts">دور على رقمه في جهات الاتصال</string>
+    <string name="label_time">الوقت</string>
+    <string name="label_start">البداية</string>
+    <string name="label_end">النهاية</string>
+
+    <!-- Settings: WhatsApp app + auto-enable -->
+    <string name="settings_whatsapp_app_title">تطبيق واتساب</string>
+    <string name="settings_whatsapp_app_subtitle_fmt">%1$s — التطبيق اللي هيفتح للشات والتذكيرات</string>
+    <string name="settings_auto_enable_title">تضمين الجروبات/العملاء الجدد تلقائيًا في التلخيص</string>
+    <string name="settings_auto_enable_desc">مفيدة لو عندك جروبات واتساب كتير مكتومة — الكتم برضه بيشتغل (واتساب لسه بيوصّل الإشعارات دي بصمت)، ده بس بيوفّر عليك إنك تفعّل كل واحد بنفسك من شاشة الجروبات والعملاء. مقفول افتراضيًا عشان الجروب الجديد ميظهرش في التلخيص قبل ما تقرر إنه فعلاً مهم.</string>
+    <string name="retention_days_fmt">%1$d يوم</string>
+    <string name="settings_system_default">افتراضي النظام</string>
+    <string name="settings_summary_schedule_subtitle">إدارة أوقات الملخص التلقائي، وفترات الشغل/الاستراحة/الهدوء</string>
+    <string name="settings_scheduled_messages_subtitle">رسائل جاهزة تتبعت يدويًا في وقت محدد</string>
+    <string name="settings_important_people_subtitle">الرسائل من الأشخاص دول بتتحدد "مهمة" دايمًا</string>
+    <string name="settings_keywords_subtitle">أضف كلمات مهمة بتاعتك، فوق القائمة الجاهزة</string>
+    <string name="settings_reply_detection_subtitle">أضف عبارات "محتاج رد" بتاعتك</string>
+    <string name="settings_allow_sending_fmt">السماح بإرسال نص الرسالة لـ %1$s عشان التلخيص</string>
+    <string name="settings_api_key_stored_locally">متخزن مشفّر على جهازك بس</string>
+    <string name="settings_groq_secure_proxy">Groq AI</string>
+    <string name="settings_groq_secure_proxy_desc">المفتاح متخزن محليًا بتشفير Android Keystore، من غير سيرفر.</string>
+    <string name="settings_version_fmt">WA premium · v%1$s</string>
+    <string name="no_phone_number_saved">مفيش رقم متسجل</string>
+    <string name="dashboard_refreshed">تم التحديث</string>
+    <string name="summary_ready_fmt">الملخص جاهز: %1$d رسالة، %2$d مهمة</string>
+    <string name="summary_generation_failed">معرفناش نولّد ملخص دلوقتي — جرب تاني بعد شوية.</string>
+    <string name="edit_scheduled_message_title">تعديل الرسالة المجدولة</string>
+    <string name="regenerate_replies">توليد ردود تانية</string>
+    <string name="write_your_own_reply">أو اكتب رد بنفسك</string>
+    <string name="write_your_own_reply_hint">اكتب ردك هنا…</string>
+    <string name="toggle_important">حدد كمهمة</string>
+    <string name="save_as_important_person">احفظ كمهم</string>
+    <string name="update_important_person_title">تحديث شخص مهم</string>
+    <string name="already_saved_as_important">محفوظ بالفعل كشخص مهم — ده هيحدّثه.</string>
+    <string name="no_enabled_groups_banner_title">في رسائل بتوصل، بس مفيش حاجة مفعّلة لسه</string>
+    <string name="no_enabled_groups_banner_body">الملخص هيفضل فاضي لحد ما تفعّل جروب أو عميل واحد على الأقل.</string>
+    <string name="add_to_phone_contacts">إضافة لجهات اتصال الهاتف</string>
+    <string name="refine_with_ai">صقل بالذكاء الاصطناعي</string>
+    <string name="badge_notification_title_fmt">%1$d محتاجين اهتمامك</string>
+    <string name="badge_notification_body">فيه رسائل مهمة أو محتاجة رد في انتظارك</string>
+    <string name="quick_chat_title">محادثة سريعة</string>
+    <string name="quick_chat_subtitle">افتح شات واتساب مباشرة بالرقم — من غير ما تحفظه كجهة اتصال الأول.</string>
+    <string name="quick_chat_number_label">رقم العميل</string>
+        <string name="quick_chat_business_label">بيزنس</string>
+<string name="quick_chat_which_whatsapp">واتساب إيه؟</string>
+    <string name="quick_chat_open_button">فتح المحادثة</string>
+    <string name="battery_banner_title">توفير البطارية بيحد من موثوقية التطبيق في الخلفية</string>
+    <string name="battery_banner_body">الشاتات المكتومة في واتساب بتوصل إشعاراتها في صمت — وأندرويد أكتر ميلًا إنه يأخر معالجة الإشعارات الصامتة تحديدًا لو التطبيق مش مستثنى من توفير البطارية. الرسالة اللي اتأخرت ممكن تبان كإنها معتوصلتش خالص.</string>
+    <string name="greeting_morning">صباح الخير</string>
+    <string name="greeting_afternoon">مساء الخير</string>
+    <string name="greeting_evening">مساء الخير</string>
+    <string name="auto_reply_title">الرد التلقائي</string>
+    <string name="auto_reply_ready_title_fmt">رد جاهز لـ %1$s</string>
+    <string name="auto_reply_subtitle">ضيف شخص (وممكن كلمة معينة اختياري) — لما يبعتلك، التطبيق يجهزلك الرد ويفتح شاته بالظبط مع الرد متكتوب خلاص. انت دايمًا اللي بتدوس Send؛ مفيش حاجة هنا بترسل لوحدها أبدًا. سيب خانة الرد فاضية والـ AI هيكتب رد جديد لكل رسالة، بدل ما يستخدم نفس النص الثابت كل مرة.</string>
+    <string name="auto_reply_person_label">الأشخاص (اختياري)</string>
+    <string name="auto_reply_person_hint">سيبها فاضية للرد على أي حد، أو اكتب أكتر من اسم بفاصلة</string>
+    <string name="auto_reply_person_support">مثال: أحمد، محمد، عميل الشركة — الفاضية = كل الرسائل</string>
+    <string name="auto_reply_all_contacts">كل الأشخاص</string>
+    <string name="auto_reply_tone_label">طريقة الرد لهذا الشخص</string>
+    <string name="auto_reply_tone_work">شغل</string>
+    <string name="auto_reply_tone_friend">صديق</string>
+    <string name="auto_reply_tone_family">عائلة</string>
+    <string name="auto_reply_keyword_label">كلمة معينة (اختياري — سيبها فاضية عشان تتطابق مع أي رسالة)</string>
+    <string name="auto_reply_text_label">الرد اللي هيتجهز (اختياري)</string>
+    <string name="auto_reply_text_ai_hint">سيبها فاضية عشان الـ AI يكتبه تلقائي</string>
+    <string name="auto_reply_text_ai_explanation">فاضية = الـ AI هيولّد رد جديد من كل رسالة فعليًا وصلت. متكتوبة = نفس النص ده هيتستخدم كل مرة القاعدة دي تتطابق.</string>
+    <string name="auto_reply_ai_generated_badge">✨ الـ AI بيكتبه تلقائي</string>
+    <string name="auto_reply_add_title">إضافة قاعدة رد تلقائي</string>
+    <string name="auto_reply_edit_title">تعديل قاعدة رد تلقائي</string>
+    <string name="auto_reply_empty">لسه مفيش قواعد رد تلقائي. ضيف قاعدة وحدد أسلوب الـ AI، وممكن تسيب الأشخاص فاضية عشان تشتغل مع أي حد.</string>
+    <string name="auto_reply_any_message">أي رسالة</string>
+    <string name="accessibility_service_label">مساعد واتساب للرد (غير مفعّل)</string>
+    <string name="accessibility_service_description">غير مستخدمة حاليًا.</string>
+    <string name="no_saved_number_fallback_fmt">مفيش رقم محفوظ لـ %1$s — تم نسخ النص وفتح واتساب. احفظ رقمه في Important People عشان يفتح شاته مباشرة المرة الجاية.</string>
+    <string name="read_all">تحديد الكل كمقروء</string>
+    <string name="delete_all">مسح الكل</string>
+    <string name="delete_all_title">مسح كل الرسايل دي؟</string>
+    <string name="delete_all_body_fmt">ده هيمسح كل الـ %1$d رسالة الظاهرة تحت الفلتر ده. الخطوة دي مينفعش ترجع فيها.</string>
+    <string name="delete_work_group_title">مسح الجروب/العميل ده؟</string>
+    <string name="delete_work_group_body_fmt">ده هيمسح \"%1$s\" من القايمة دي. الرسائل اللي اتسجلت منه قبل كده هتفضل موجودة في البحث/السجل — بس الإدخال ده بس اللي هيتشال. لو جت رسالة جديدة منه بعدين، هيترجع يتسجل تاني من الأول (متوقف افتراضيًا).</string>
+    <string name="country_picker_title">اختار بلدك</string>
+    <string name="country_picker_search_hint">دوّر بالاسم أو الكود</string>
+    <string name="country_picker_no_results">مفيش بلد بيطابق بحثك</string>
+    <string name="onboarding_country_title">بلدك إيه؟</string>
+    <string name="onboarding_country_subtitle">ده هيبقى كود الدولة الافتراضي في كل مكان في التطبيق تكتب فيه رقم تليفون — المحادثة السريعة، الأشخاص المهمين، الرسائل المجدولة. تقدر تغيّره في أي وقت من الإعدادات، أو تحدد كود مختلف لرقم معين لما تحتاج.</string>
+    <string name="onboarding_country_selected_fmt">المختار: %1$s %2$s (+%3$s)</string>
+    <string name="settings_default_country">الدولة الافتراضية</string>
+    <string name="settings_default_country_body_fmt">%1$s %2$s (+%3$s) — بيتحط تلقائي كود الدولة في أي مكان تكتب فيه رقم تليفون</string>
+    <string name="about_app_initials">WM</string>
+    <string name="app_name_full">WA premium</string>
+    <string name="about_developed_by">تطوير</string>
+    <string name="about_developer_name">Mahmoud Mady</string>
+    <string name="about_developer_title">Developer</string>
+    <string name="about_copyright_fmt">© %1$s Mahmoud Mady. جميع الحقوق محفوظة.</string>
+    <string name="muted_chats_help_title">الشات الصامت</string>
+    <string name="muted_chats_help_body">خلي الشات صامت من إعدادات أندرويد مع استمرار التتبع.</string>
+    <string name="open_whatsapp_notification_settings">فتح إعدادات إشعارات واتساب</string>
+    <string name="scheduled_messages_explainer">في الوقت المحدد، دوسك على التذكير هيفتح واتساب والرسالة جاهزة — انت لسه اللي بتدوس Send. واتساب مبيعطيش أي تطبيق تالت طريقة يبعت تلقائي من غير الدوسة دي. دوس على أي رسالة تحت عشان تعدلها.</string>
+    <string name="important_people_matching_hint">بيتطابق مع اسم المرسل اللي واتساب بيوريه في الإشعار — تطابق جزئي من غير حساسية لحالة الحروف كفاية (مثلًا \"Ahmed\" بتتطابق مع \"Ahmed Hassan\").</string>
+    <string name="important_people_empty">لسه مفيش أشخاص مهمين متضافين. الرسايل من أي حد تضيفه هنا بتُعتبر مهمة دايمًا — بغض النظر عن الكلمات المفتاحية. ضيف رقمه كمان عشان تقدر تختاره مباشرة لما تجدول رسالة.</string>
+    <string name="keyword_rules_empty">لسه مفيش كلمات مفتاحية مخصصة. القايمة المدمجة (urgent/عاجل, complaint/شكوى, manager/مدير...) بتشتغل دايمًا — ضيف كلماتك انت فوقها، بوزن من 1 لـ10.</string>
+    <string name="toast_could_not_open_whatsapp">معرفنا نفتح واتساب</string>
+    <string name="toast_could_not_open_contacts">معرفنا نفتح جهات الاتصال</string>
+    <string name="ai_test_error_consent_needed">شغّل \"Allow sending message text\" فوق الأول</string>
+    <string name="ai_test_error_no_api_key_fmt">مفيش مفتاح API متحفوظ لـ%1$s لسه</string>
+    <string name="ai_test_error_empty_response">المزود رد بس من غير أي محتوى</string>
+    <string name="work_group_waiting_first_message">اتضاف يدويًا — في انتظار أول رسالة</string>
+    <string name="add_group_or_client_contacts_hint">لو اخترت عميل من جهات الاتصال، تأكد إن الاسم مطابق بالظبط للاسم اللي واتساب بيوريه له — اسم جهة الاتصال في الموبايل ممكن يختلف عن اسم واتساب.</string>
+    <string name="reply_phrases_empty">لسه مفيش عبارات مخصصة. العبارات المدمجة (\"any update?\", \"محتاج رد\", الأسئلة اللي بتخلص بـ? أو ؟...) بتشتغل دايمًا — ضيف عبارتك انت فوقها.</string>
+    <string name="time_picker_switch_to_clock">التبديل للساعة</string>
+    <string name="time_picker_switch_to_manual">التبديل للإدخال اليدوي</string>
+    <string name="scheduled_message_to_fmt">إلى: %1$s</string>
+    <string name="scheduled_message_every_day">كل يوم</string>
+    <string name="scheduled_message_opens_chat_directly">يفتح الشات مباشرة</string>
+    <string name="scheduled_message_opens_whatsapp_generic">محاولة إرسال في الخلفية · يظهر تنبيه كحل بديل إذا لم يتوفر الرد المباشر</string>
+    <string name="scheduled_message_background">إرسال تلقائي في الخلفية - Premium</string>
+    <string name="settings_section_permissions">الصلاحيات</string>
+    <string name="settings_section_automation">التشغيل التلقائي</string>
+    <string name="settings_section_ai">الذكاء الاصطناعي والملخصات</string>
+    <string name="settings_section_appearance">المظهر والمنطقة</string>
+    <string name="settings_section_data">البيانات والخصوصية</string>
+    <string name="settings_section_about">حول التطبيق</string>
+    <string name="settings_status_enabled">مفعّلة</string>
+    <string name="settings_status_disabled">غير مفعّلة</string>
+    <string name="ai_status_not_tested">لسه متجرّبة</string>
+    <string name="ai_status_testing">بيتجرب…</string>
+    <string name="ai_status_connected">متصل — الردود هتستخدم المزود ده</string>
+    <string name="ai_status_failed">فشل الاتصال</string>
+    <string name="auto_reply_no_rules_for_filter">لسه مفيش Rules بالطريقة دي.</string>
+    <string name="need_reply_names_preview_more_fmt">%1$s +%2$d</string>
+    <string name="need_reply_names_menu_title">في انتظار رد</string>
+    <string name="action_send">إرسال</string>
+    <string name="dashboard_next_scheduled_fmt">جدولة قادمة · %1$s</string>
+    <string name="dashboard_send_now">إرسال الآن</string>
+    <string name="dashboard_ready_reply_for_fmt">رد جاهز لـ %1$s</string>
+    <string name="dashboard_ticker_important_fmt">مهمة — %1$s</string>
+    <string name="dashboard_ticker_need_reply_fmt">محتاجة رد — %1$s</string>
+    <string name="dashboard_ticker_normal_fmt">رسالة جديدة — %1$s</string>
+    <string name="dashboard_next_scheduled_compact_fmt">%1$s · %2$s</string>
+    <string name="dashboard_ticker_count_suffix_fmt">(%1$d)</string>
+    <string name="auto_reply_show_replies">عرض الردود (%1$d)</string>
+    <string name="auto_reply_notification_delete">مسح الرد</string>
+    <string name="auto_reply_notification_deleted">تم مسح إشعار رد الـ AI</string>
+    <string name="messaging_platform_label">تطبيق المراسلة</string>
+    <string name="messaging_platform_whatsapp">واتساب</string>
+    <string name="messaging_platform_business">واتساب بيزنس</string>
+    <string name="messaging_platform_messenger">ماسنجر</string>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Original rounded speech-bubble shape (not WhatsApp's mark) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,26 C71,26 85,38 85,53 C85,66 74,77 60,79.5 L60,90 L48,80 C33,78 23,66.5 23,53 C23,38 37,26 54,26 Z" />
+    <!-- Checkmark to signal "handled / organized work" -->
+    <path
+        android:fillColor="#0F6E5C"
+        android:pathData="M40,54 L49,63 L69,41 L73,45 L49,71 L36,58 Z" />
+</vector>
